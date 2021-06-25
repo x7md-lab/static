@@ -1,3 +1,3 @@
 # static
  
-Repo For Hosting Randome Things
+Repo For Hosting Random Things

@@ -1,0 +1,28 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+<label>
+Output
+</label>
+<per id="output">
+
+<per>
+<script>
+let obj = `{
+   "data":"Name=Fuad, Pos=mgr, Name=Micheal, Pos=Dev, Name=Magdy, Pos=Mgr, Name=Ahmed, Pos=Dev"
+}`;
+
+let myData = JSON.parse(obj);
+let arrData = myData.data.match(/Name\=(\w+), Pos\=(\w+)/g);
+
+let result = (jobTitle)=> arrData.filter(e => e.includes(`Pos=${jobTitle}`));
+
+document.getElementById("output").innerText = result("Dev")
+</script>
+</body>
+
+</html>
